@@ -49,7 +49,11 @@ public class ArrayList<T>
             {
                  this.arr[index] = value;
             }
-            throw new IndexOutOfRangeException();
+            else
+            {
+                throw new IndexOutOfRangeException();
+            }
+            
         }
     }
 
