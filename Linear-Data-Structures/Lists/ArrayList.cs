@@ -40,7 +40,7 @@ public class ArrayList<T>
             {
                 return this.arr[index];
             }
-            throw new IndexOutOfRangeException();
+            throw new ArgumentOutOfRangeException();
         }
 
         set
@@ -51,7 +51,7 @@ public class ArrayList<T>
             }
             else
             {
-                throw new IndexOutOfRangeException();
+                throw new ArgumentOutOfRangeException();
             }
             
         }
@@ -90,7 +90,7 @@ public class ArrayList<T>
         }
         else
         {
-            throw new IndexOutOfRangeException();
+            throw new ArgumentOutOfRangeException();
         }
     }
 }
