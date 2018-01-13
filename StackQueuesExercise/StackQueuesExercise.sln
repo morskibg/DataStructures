@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1. Reverse Numbers with a Stack", "Problem 1. Reverse Numbers with a Stack\Problem 1. Reverse Numbers with a Stack.csproj", "{942A9A8F-66F0-45D3-A6FE-E765CD32BA7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Calculate Sequence with a Queue", "Problem 2. Calculate Sequence with a Queue\Problem 2. Calculate Sequence with a Queue.csproj", "{1B305962-8F10-4D93-BB12-37AB9CFBC7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4Stack", "4Stack\4Stack.csproj", "{E9BD2662-E761-441F-8B44-21EEEB13BE70}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{942A9A8F-66F0-45D3-A6FE-E765CD32BA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942A9A8F-66F0-45D3-A6FE-E765CD32BA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942A9A8F-66F0-45D3-A6FE-E765CD32BA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942A9A8F-66F0-45D3-A6FE-E765CD32BA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B305962-8F10-4D93-BB12-37AB9CFBC7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B305962-8F10-4D93-BB12-37AB9CFBC7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B305962-8F10-4D93-BB12-37AB9CFBC7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B305962-8F10-4D93-BB12-37AB9CFBC7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
