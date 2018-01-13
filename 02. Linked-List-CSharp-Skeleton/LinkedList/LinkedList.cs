@@ -48,7 +48,7 @@ public class LinkedList<T> : IEnumerable<T>
             tempNode.NextNode = newNode;
             _tail = newNode;
         }
-        ++this.Count;
+        ++Count;
     }
 
     public T RemoveFirst()
@@ -70,20 +70,37 @@ public class LinkedList<T> : IEnumerable<T>
 
     public T RemoveLast()
     {
-        // TODO: Throw exception if the list is empty
-        throw new NotImplementedException();
+        if (Count == 0)
+        {
+            throw new InvalidOperationException();
+        }
+        else
+        {
+            T item = _tail.Value;
+            Node tempNode = _head;
+            for (int i = 1; i < Count - 1; ++i)
+            {
+                tempNode = tempNode.NextNode;
+            }
+            _tail = tempNode;
+            --Count;
+            return item;
+        }
     }
 
     public IEnumerator<T> GetEnumerator()
     {
-        // TODO
-        throw new NotImplementedException();
+        Node currentNode = _head;
+        while (currentNode.NextNode != null)
+        {
+            yield return currentNode.Value;
+            currentNode = currentNode.NextNode;
+        }
     }
 
     IEnumerator IEnumerable.GetEnumerator()
     {
-        // TODO
-        throw new NotImplementedException();
+        return GetEnumerator();
     }
 
     private class Node
