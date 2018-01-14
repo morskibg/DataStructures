@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Calculate Sequen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ptoblem3.Srack", "4Stack\Ptoblem3.Srack.csproj", "{E9BD2662-E761-441F-8B44-21EEEB13BE70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4. LinkedStack", "Problem4. LinkedStack\Problem4. LinkedStack.csproj", "{311EBF62-6690-4EF4-8EEB-816876382320}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9BD2662-E761-441F-8B44-21EEEB13BE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{311EBF62-6690-4EF4-8EEB-816876382320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311EBF62-6690-4EF4-8EEB-816876382320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311EBF62-6690-4EF4-8EEB-816876382320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311EBF62-6690-4EF4-8EEB-816876382320}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
