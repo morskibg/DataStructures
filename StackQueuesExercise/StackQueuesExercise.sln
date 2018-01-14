@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ptoblem3.Srack", "4Stack\Pt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4. LinkedStack", "Problem4. LinkedStack\Problem4. LinkedStack.csproj", "{311EBF62-6690-4EF4-8EEB-816876382320}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4. LinkedStack_v2", "Problem4. LinkedStack_v2\Problem4. LinkedStack_v2.csproj", "{4ABE413C-B773-44C9-AE0D-8D24C8133791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem8.N-M", "Problem8.N-M\Problem8.N-M.csproj", "{EC52116A-6E72-4592-AD4C-D01DC2AE2929}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{311EBF62-6690-4EF4-8EEB-816876382320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{311EBF62-6690-4EF4-8EEB-816876382320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{311EBF62-6690-4EF4-8EEB-816876382320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABE413C-B773-44C9-AE0D-8D24C8133791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABE413C-B773-44C9-AE0D-8D24C8133791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABE413C-B773-44C9-AE0D-8D24C8133791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABE413C-B773-44C9-AE0D-8D24C8133791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC52116A-6E72-4592-AD4C-D01DC2AE2929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC52116A-6E72-4592-AD4C-D01DC2AE2929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC52116A-6E72-4592-AD4C-D01DC2AE2929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC52116A-6E72-4592-AD4C-D01DC2AE2929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
