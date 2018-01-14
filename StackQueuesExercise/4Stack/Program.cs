@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LinkedStack
-{
+
+
+//namespace ArrStack
+//{
+
+
 
     public class ArrayStack<T>
     {
@@ -26,7 +26,7 @@ namespace LinkedStack
             {
                 this.Grow();
             }
-            this.elements[this.Count - 1] = element;
+            this.elements[this.Count] = element;
             ++this.Count;
         }
 
@@ -45,7 +45,7 @@ namespace LinkedStack
             T[] arr = new T[this.Count];
             for (int i = 0; i < this.Count; i++)
             {
-                arr[i] = this.elements[i];
+                arr[i] = this.elements[this.Count - 1 - i];
             }
             return arr;
         }
@@ -61,11 +61,33 @@ namespace LinkedStack
         }
     }
 
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            ArrayStack<int> stack = new ArrayStack<int>();
+            Console.WriteLine(stack.Count);
+            stack.Push(99);
+            stack.Push(100);
+            Console.WriteLine(string.Join(" ",stack.ToArray()));
+            
+        int t = 0;
+            //for (int i = 0; i < 100; i++)
+            //    {
+            //        stack.Push(i);
+            //    }
+
+            //    Console.WriteLine(stack.Count);
+            //    Console.WriteLine(string.Join(" ", stack.ToArray()));
+
+            //    for (int i = 0; i < 100; i++)
+            //    {
+            //        Console.WriteLine(stack.Pop());
+
+            //    }
+            //    Console.WriteLine(stack.Count);
+            //    Console.WriteLine(stack.Pop());
         }
     }
-}
 
+//}

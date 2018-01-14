@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1. Reverse Numbers 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Calculate Sequence with a Queue", "Problem 2. Calculate Sequence with a Queue\Problem 2. Calculate Sequence with a Queue.csproj", "{1B305962-8F10-4D93-BB12-37AB9CFBC7D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4Stack", "4Stack\4Stack.csproj", "{E9BD2662-E761-441F-8B44-21EEEB13BE70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ptoblem3.Srack", "4Stack\Ptoblem3.Srack.csproj", "{E9BD2662-E761-441F-8B44-21EEEB13BE70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
