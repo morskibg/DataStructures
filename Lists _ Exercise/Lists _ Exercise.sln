@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 4. Remove Odd Occur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 5. Count of Occurrences", "Problem 5. Count of Occurrences\Problem 5. Count of Occurrences.csproj", "{BA87E67F-88E9-475E-944C-33F38E28A500}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 6. Implement the Data Structure ReversedList", "Problem 6. Implement the Data Structure ReversedList\Problem 6. Implement the Data Structure ReversedList.csproj", "{9F5957A8-F5BC-4EAB-BD05-CEE4A931FCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 7. Distance in Labyrinth", "Problem 7. Distance in Labyrinth\Problem 7. Distance in Labyrinth.csproj", "{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{BA87E67F-88E9-475E-944C-33F38E28A500}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA87E67F-88E9-475E-944C-33F38E28A500}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA87E67F-88E9-475E-944C-33F38E28A500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5957A8-F5BC-4EAB-BD05-CEE4A931FCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5957A8-F5BC-4EAB-BD05-CEE4A931FCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5957A8-F5BC-4EAB-BD05-CEE4A931FCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5957A8-F5BC-4EAB-BD05-CEE4A931FCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
