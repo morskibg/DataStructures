@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 6. Implement the Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 7. Distance in Labyrinth", "Problem 7. Distance in Labyrinth\Problem 7. Distance in Labyrinth.csproj", "{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7Distance_V2", "7Distance_V2\7Distance_V2.csproj", "{B2DD12CC-9EF4-4776-B48F-BA5CBC837D43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0102773-2D67-4F21-AE2A-4BCF5D92AE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DD12CC-9EF4-4776-B48F-BA5CBC837D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DD12CC-9EF4-4776-B48F-BA5CBC837D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DD12CC-9EF4-4776-B48F-BA5CBC837D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DD12CC-9EF4-4776-B48F-BA5CBC837D43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
