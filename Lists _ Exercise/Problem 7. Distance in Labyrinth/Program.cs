@@ -67,49 +67,39 @@ namespace Problem_7.Distance_in_Labyrinth
             
             q.Enqueue(startVertex);
             int step = 0;           
-            int currLayer = 1;
-            int nextLayer = 0;
+            
             while (q.Count > 0)
             {
                
                 int currVertex = q.Dequeue();               
                 int currRow = GetRow(currVertex, n);
                 int currCol = GetCol(currVertex, n);
-                --currLayer;
-                if(currLayer == 0)
-                {
-                    ++step;
-                    currLayer = nextLayer;
-                    nextLayer = 0;                    
-                }
+                
                 if (IsInBounds(currRow, currCol + 1, n) && matrix[currRow, currCol + 1] == "u")
                 {                                  
                     matrix[currRow, currCol + 1] = step.ToString();
                     q.Enqueue(GetVertexNum(currRow, currCol + 1, n));                   
-                    ++nextLayer;
+                   
                 }
                 if (IsInBounds(currRow, currCol - 1, n) && matrix[currRow, currCol - 1] == "u")
                 {                    
                     matrix[currRow, currCol - 1] = step.ToString();
                     q.Enqueue(GetVertexNum(currRow, currCol - 1, n));
-                    ++nextLayer;
+                   
                 }
                 if (IsInBounds(currRow + 1, currCol, n) && matrix[currRow + 1, currCol] == "u")
                 {                  
                     matrix[currRow + 1, currCol] = step.ToString();
                     q.Enqueue(GetVertexNum(currRow + 1, currCol, n));
-                    ++nextLayer;
+                    
                 }
                 if (IsInBounds(currRow - 1, currCol, n) && matrix[currRow - 1, currCol] == "u")
                 {           
                     matrix[currRow - 1, currCol] = step.ToString();
                     q.Enqueue(GetVertexNum(currRow - 1, currCol, n));
-                    ++nextLayer;
+                   
                 }
-                if(currLayer == 0)
-                {
-                    currLayer = nextLayer;
-                }
+                
 
             }
            
