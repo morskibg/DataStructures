@@ -104,7 +104,7 @@ namespace Problem_7.Distance_in_Labyrinth
             {
                 for (int j = 0; j < n; j++)
                 {
-                    Console.Write($"{matrix[i, j]} ");
+                    Console.Write($"{matrix[i, j]}");
                 }
                 Console.WriteLine();
             }
