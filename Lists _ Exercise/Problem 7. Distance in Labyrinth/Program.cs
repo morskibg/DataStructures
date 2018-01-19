@@ -66,41 +66,45 @@ namespace Problem_7.Distance_in_Labyrinth
             int startVertex = GetVertexNum(startRow, startCol, n);
             
             q.Enqueue(startVertex);
-            int step = 0;           
-            
+            int step = 1;
+            int childCounter = 1;
             while (q.Count > 0)
             {
-               
-                int currVertex = q.Dequeue();               
-                int currRow = GetRow(currVertex, n);
-                int currCol = GetCol(currVertex, n);
-                
-                if (IsInBounds(currRow, currCol + 1, n) && matrix[currRow, currCol + 1] == "u")
-                {                                  
-                    matrix[currRow, currCol + 1] = step.ToString();
-                    q.Enqueue(GetVertexNum(currRow, currCol + 1, n));                   
-                   
-                }
-                if (IsInBounds(currRow, currCol - 1, n) && matrix[currRow, currCol - 1] == "u")
-                {                    
-                    matrix[currRow, currCol - 1] = step.ToString();
-                    q.Enqueue(GetVertexNum(currRow, currCol - 1, n));
-                   
-                }
-                if (IsInBounds(currRow + 1, currCol, n) && matrix[currRow + 1, currCol] == "u")
-                {                  
-                    matrix[currRow + 1, currCol] = step.ToString();
-                    q.Enqueue(GetVertexNum(currRow + 1, currCol, n));
-                    
-                }
-                if (IsInBounds(currRow - 1, currCol, n) && matrix[currRow - 1, currCol] == "u")
-                {           
-                    matrix[currRow - 1, currCol] = step.ToString();
-                    q.Enqueue(GetVertexNum(currRow - 1, currCol, n));
-                   
-                }
-                
+                int counter = 0;
+                for (int i = 0; i < childCounter; i++)
+                {
+                    int currVertex = q.Dequeue();
+                    int currRow = GetRow(currVertex, n);
+                    int currCol = GetCol(currVertex, n);
 
+                    if (IsInBounds(currRow, currCol + 1, n) && matrix[currRow, currCol + 1] == "u")
+                    {
+                        matrix[currRow, currCol + 1] = step.ToString();
+                        q.Enqueue(GetVertexNum(currRow, currCol + 1, n));
+                        counter++;
+
+                    }
+                    if (IsInBounds(currRow, currCol - 1, n) && matrix[currRow, currCol - 1] == "u")
+                    {
+                        matrix[currRow, currCol - 1] = step.ToString();
+                        q.Enqueue(GetVertexNum(currRow, currCol - 1, n));
+                        counter++;
+                    }
+                    if (IsInBounds(currRow + 1, currCol, n) && matrix[currRow + 1, currCol] == "u")
+                    {
+                        matrix[currRow + 1, currCol] = step.ToString();
+                        q.Enqueue(GetVertexNum(currRow + 1, currCol, n));
+                        counter++;
+                    }
+                    if (IsInBounds(currRow - 1, currCol, n) && matrix[currRow - 1, currCol] == "u")
+                    {
+                        matrix[currRow - 1, currCol] = step.ToString();
+                        q.Enqueue(GetVertexNum(currRow - 1, currCol, n));
+                        counter++;
+                    }
+                }
+                ++step;
+                childCounter = counter;
             }
            
             for (int i = 0; i < n; i++)
