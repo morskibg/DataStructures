@@ -115,30 +115,14 @@ namespace _03.Leaf_Nodes
         {
             ReadTree();
             Tree<int> node = GetRootNode();
-            if (nodeByValue.Count > 1)
-            {
-                while (true)
-                {
-                    if (node.Children.Count > 0)
-                    {
-                        node = node.Children.First();
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                
-            }
-            Console.WriteLine($"Deepest node: {node.Value}");
-            //List<int> result = nodeByValue.Values
-            //    .Where(x => x.Children.Count != 0 && x.Parent != null)
-            //    .Select(x => x.Value)
-            //    .OrderBy(x => x)
-            //    .ToList();
-            ////FindMiddles(rootNode, result);
-
-            //Console.WriteLine($"Middle nodes: {string.Join(" ", result)}");
+            List<int> middles = nodeByValue.Values
+                .Where(x => x.Children.Count != 0 && x.Parent != null)
+                .Select(x => x.Value)
+                .ToList();
+            
+            Console.WriteLine($"Deepest node: {middles.First()}");
+            
+            
         }
     }
 }
