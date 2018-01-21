@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Deepest Node", "05. Dee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Middle Nodes", "04. Middle Nodes\04. Middle Nodes.csproj", "{7EE4CE26-80D6-4C00-8063-7FDCAE96C39D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepestNode_v2", "DeepestNode_v2\DeepestNode_v2.csproj", "{11ADB956-69E5-48FB-9C01-F12F0F0C1649}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7EE4CE26-80D6-4C00-8063-7FDCAE96C39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE4CE26-80D6-4C00-8063-7FDCAE96C39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE4CE26-80D6-4C00-8063-7FDCAE96C39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
