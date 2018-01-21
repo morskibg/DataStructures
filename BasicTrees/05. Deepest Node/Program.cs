@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03.Leaf_Nodes
+namespace _05.Deepest_Node
 {
     class Program
     {
@@ -95,13 +95,45 @@ namespace _03.Leaf_Nodes
                 }
             }
         }
+
+        static void FindMiddles(Tree<int> currNode, List<int> result)
+        {
+            foreach (var child in currNode.Children)
+            {
+                if (child.Children.Count > 0 && child.Parent != null)
+                {
+                    result.Add(child.Value);
+                }
+                else
+                {
+                    FindMiddles(child, result);
+                }
+            }
+
+        }
         static void Main(string[] args)
         {
             ReadTree();
-            Tree<int> rootNode = GetRootNode();
-            List<int> result = new List<int>();
-            FindLeafs(rootNode, result);
-            Console.WriteLine($"Leaf nodes: {string.Join(" ", result.OrderBy(x => x))}");
+            Tree<int> node = GetRootNode();
+            List<int> leafs = new List<int>();
+            FindLeafs(node, leafs);
+
+            Dictionary<int, int> leafDict = new Dictionary<int, int>();
+            foreach (var leaf in leafs)
+            {
+                int counter = 0;
+                Tree<int> temp = nodeByValue[leaf];
+
+                while (temp.Parent != node)
+                {
+                    ++counter;
+                    temp = temp.Parent;
+                }
+                leafDict[leaf] = counter;
+
+            }
+
+            Console.WriteLine($"Deepest node: {leafDict.OrderByDescending(x => x.Value).First().Key}");
         }
     }
 }

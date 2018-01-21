@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03.Leaf_Nodes
+namespace _04.Middle_Nodes
 {
     class Program
     {
@@ -95,13 +95,34 @@ namespace _03.Leaf_Nodes
                 }
             }
         }
+
+        static void FindMiddles(Tree<int> currNode, List<int> result)
+        {
+            foreach (var child in currNode.Children)
+            {
+                if (child.Children.Count > 0 && child.Parent != null)
+                {
+                    result.Add(child.Value);
+                }
+                else
+                {
+                    FindMiddles(child, result);
+                }
+            }
+
+        }
         static void Main(string[] args)
         {
             ReadTree();
             Tree<int> rootNode = GetRootNode();
-            List<int> result = new List<int>();
-            FindLeafs(rootNode, result);
-            Console.WriteLine($"Leaf nodes: {string.Join(" ", result.OrderBy(x => x))}");
+            List<int> result = nodeByValue.Values
+                .Where(x => x.Children.Count != 0 && x.Parent != null)
+                .Select(x => x.Value)
+                .OrderBy(x => x)
+                .ToList();
+            //FindMiddles(rootNode, result);
+
+            Console.WriteLine($"Middle nodes: {string.Join(" ", result)}");
         }
     }
 }
