@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Middle Nodes", "04. Mid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepestNode_v2", "DeepestNode_v2\DeepestNode_v2.csproj", "{11ADB956-69E5-48FB-9C01-F12F0F0C1649}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Longest Path", "06. Longest Path\06. Longest Path.csproj", "{FB0080B0-C767-4E30-B34B-5CFD0C0D1512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Paths With Given Sum", "07. Paths With Given Sum\07. Paths With Given Sum.csproj", "{F896D570-1AF4-4B94-94EF-456160DA5020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Subtrees With Given Sum", "08. Subtrees With Given Sum\08. Subtrees With Given Sum.csproj", "{367E1E9E-2F29-49A3-9EB8-E6C101502CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11ADB956-69E5-48FB-9C01-F12F0F0C1649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0080B0-C767-4E30-B34B-5CFD0C0D1512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0080B0-C767-4E30-B34B-5CFD0C0D1512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0080B0-C767-4E30-B34B-5CFD0C0D1512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0080B0-C767-4E30-B34B-5CFD0C0D1512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F896D570-1AF4-4B94-94EF-456160DA5020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F896D570-1AF4-4B94-94EF-456160DA5020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F896D570-1AF4-4B94-94EF-456160DA5020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F896D570-1AF4-4B94-94EF-456160DA5020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367E1E9E-2F29-49A3-9EB8-E6C101502CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367E1E9E-2F29-49A3-9EB8-E6C101502CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367E1E9E-2F29-49A3-9EB8-E6C101502CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367E1E9E-2F29-49A3-9EB8-E6C101502CC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
