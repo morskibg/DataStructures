@@ -5,7 +5,15 @@ public class BinarySearchTree<T> where T : IComparable<T>
 {
     private Node root;
 
-    private Node Insert(Node node,T value)
+    private BinarySearchTree(Node node)
+    {
+        this.Copy(node);
+    }
+    public BinarySearchTree()
+    {
+        this.root = null;
+    }
+    private Node Insert(Node node, T value)
     {
         if (node == null)
         {
@@ -20,7 +28,7 @@ public class BinarySearchTree<T> where T : IComparable<T>
         {
             node.rightNode = Insert(node.rightNode, value);
         }
-        
+
         return node;
     }
     public void Insert(T value)
@@ -65,18 +73,18 @@ public class BinarySearchTree<T> where T : IComparable<T>
     public bool Contains(T value)
     {
         Node current = this.root;
-        
+
         while (current != null)
         {
             int compare = current.Value.CompareTo(value);
             if (compare > 0)
             {
-                
+
                 current = current.leftNode;
             }
             else if (compare < 0)
             {
-               
+
                 current = current.rightNode;
             }
             else
@@ -89,19 +97,87 @@ public class BinarySearchTree<T> where T : IComparable<T>
 
     public void DeleteMin()
     {
-        throw new NotImplementedException();
+        if (this.root == null)
+        {
+            return;
+        }
+        Node parent = null;
+        Node current = this.root;
+        while (current.leftNode != null)
+        {
+            parent = current;
+            current = parent.leftNode;
+        }
+        if (parent == null)
+        {
+            this.root = current.rightNode;
+        }
+        else
+        {
+            parent.leftNode = current.rightNode;
+        }
     }
-
     public BinarySearchTree<T> Search(T item)
     {
-        throw new NotImplementedException();
+        Node current = this.root;
+        while (current != null)
+        {
+            int compare = current.Value.CompareTo(item);
+            if (compare > 0)
+            {
+                current = current.leftNode;
+            }
+            else if (compare < 0)
+            {
+                current = current.rightNode;
+            }
+            else
+            {
+                return new BinarySearchTree<T>(current);
+            }
+        }
+
+
+        return null;
+    }
+    private void Copy(Node node)
+    {
+        if (node == null)
+        {
+            return;
+        }
+        this.Insert(node.Value);
+        this.Copy(node.leftNode);
+        this.Copy(node.rightNode);
     }
 
     public IEnumerable<T> Range(T startRange, T endRange)
     {
-        throw new NotImplementedException();
+        List<T> result = new List<T>();
+        this.Range(this.root, result, startRange, endRange);
+        return result;
     }
-
+    private void Range(Node node, List<T> result, T start, T end)
+    {
+        if(node == null)
+        {
+            return;
+        }
+        int compareLow = node.Value.CompareTo(start);
+        int compareHigh = node.Value.CompareTo(end);
+        if(compareLow > 0)
+        {
+            this.Range(node.leftNode, result, start, end);
+        }
+        if(compareLow >= 0 && compareHigh <= 0)
+        {
+            result.Add(node.Value);
+        }
+        if(compareHigh < 0)
+        {
+            this.Range(node.rightNode, result, start, end);
+        }
+    }
     public void EachInOrder(Action<T> action)
     {
         this.EachInOrder(this.root, action);
@@ -138,13 +214,15 @@ public class Launcher
     {
         BinarySearchTree<int> BST = new BinarySearchTree<int>();
         BST.Insert(20);
-        BST.Insert(19);
-        BST.Insert(34);
+        BST.Insert(15);
         BST.Insert(12);
+        BST.Insert(34);
+        BST.Insert(30);
+        BST.Insert(13);
         BST.Insert(56);
-
-        List<int> list = new List<int>();
-        BST.EachInOrder(list.Add);
+        BST.Search(15);
+        //List<int> list = new List<int>();
+        //BST.EachInOrder(list.Add);
         int t = 0;
     }
 }
